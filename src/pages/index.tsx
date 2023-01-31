@@ -38,7 +38,7 @@ const HomePage = () => {
                 </Link>
               </div>
             </div>
-            <div className='my-16 md:my-0 px-16 w-full md:w-[45%] grid place-content-center'>
+            <div className='my-16 md:my-0 px-16 md:px-0 w-full md:w-[45%] grid place-content-center'>
               <Image
                 alt='emah marketing solutions'
                 src='/images/sections/hero/home.png'
