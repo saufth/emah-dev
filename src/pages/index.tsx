@@ -81,7 +81,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <div className='mt-36'>
+        <div className='mt-48'>
           <About {...aboutConfig} />
         </div>
       </main>
