@@ -1,7 +1,7 @@
 // Types
-import { HeroProps } from '../../types/pages'
+import { HeroProps } from '../../types/sections'
 // Styles
-import styles from '../../styles/pages/Hero.module.css'
+import styles from '../../styles/sections/Hero.module.css'
 
 /**
  * The hero section of the application

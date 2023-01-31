@@ -3,7 +3,7 @@ import { FormEvent, useRef } from 'react'
 // Services
 import emailjs from '@emailjs/browser'
 // Styles
-import styles from '../../styles/pages/Contact.module.css'
+import styles from '../../styles/sections/Contact.module.css'
 
 /**
 * The contact section of application

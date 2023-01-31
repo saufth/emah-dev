@@ -87,6 +87,7 @@ module.exports = {
         ...sizingConfig.defaults
       },
       margin: {
+        '5%': '5%',
         ...sizingConfig.defaults
       },
       zIndex: {
@@ -120,70 +121,6 @@ module.exports = {
         // 'about-strategy': "url('/images/sections/about/strategy.jpg')",
         // 'about-prevent': "url('/images/sections/about/prevent.jpg')",
         // 'about-progress': "url('/images/sections/about/progress.jpg')"
-      },
-      transitionDelay: {
-        600: '600ms'
-      },
-      animation: {
-        'tansition-1-3': 'tansition-1-3 9s infinite ease',
-        'tansition-2-3': 'tansition-2-3 9s infinite ease',
-        'tansition-3-3': 'tansition-3-3 9s infinite ease'
-      },
-      keyframes: {
-        'tansition-1-3': {
-          '0%': {
-            opacity: 1
-          },
-          '23%': {
-            opacity: 1
-          },
-          '33%': {
-            opacity: 0
-          },
-          '90%': {
-            opacity: 0
-          },
-          '100%': {
-            opacity: 1
-          }
-        },
-        'tansition-2-3': {
-          '0%': {
-            opacity: 0
-          },
-          '23%': {
-            opacity: 0
-          },
-          '33%': {
-            opacity: 1
-          },
-          '56%': {
-            opacity: 1
-          },
-          '66%': {
-            opacity: 0
-          },
-          '100%': {
-            opacity: 0
-          }
-        },
-        'tansition-3-3': {
-          '0%': {
-            opacity: 0
-          },
-          '56%': {
-            opacity: 0
-          },
-          '66%': {
-            opacity: 1
-          },
-          '90%': {
-            opacity: 1
-          },
-          '100%': {
-            opacity: 0
-          }
-        }
       }
     }
   },

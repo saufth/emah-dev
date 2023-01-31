@@ -7,7 +7,7 @@ import withRouter, { WithRouterProps } from 'next/dist/client/with-router'
 // Types
 import { Theme } from '../../types/theme'
 // Styles
-import styles from '../../styles/pages/Footer.module.css'
+import styles from '../../styles/sections/Footer.module.css'
 
 /**
  * The footer section of application

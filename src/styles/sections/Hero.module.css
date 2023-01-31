@@ -28,6 +28,7 @@
     /* Typography */
     font-proxima-soft-medium
     text-center
+    leading-normal md:leading-normal
     tracking-wide md:tracking-widest;
 }
 
@@ -40,13 +41,15 @@
 .textLarge {
   @apply
     /* Typography */
-    text-5xl md:text-6xl;
+    text-5xl md:text-6xl
+    leading-normal md:leading-normal;
 }
 
 .textMedium {
   @apply
     /* Typography */
-    text-4xl md:text-5xl;
+    text-4xl md:text-5xl
+    leading-normal md:leading-normal;
 }
 
 .space {

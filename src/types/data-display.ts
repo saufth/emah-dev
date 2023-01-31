@@ -8,9 +8,10 @@ export interface ShowcaseProps extends ThemeProps {
   /** Description of the showcase */
   descriptions: string[]
   /** Image to use on the showcase */
-  image: 'design'
+  image: 'marketing'
     | 'branding'
     | 'development'
+    | 'design'
     | 'team'
     | 'innovate'
     | 'oportunity'
