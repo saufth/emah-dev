@@ -1,4 +1,4 @@
-.menu {
+.button {
   @apply
     /* Spacing */
     w-7
@@ -15,7 +15,7 @@
     [&>span]:rounded-sm;
 }
 
-.menuDark {
+.buttonDark {
   @apply
     /* Background */
     [&>span]:bg-emah-dark;
