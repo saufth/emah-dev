@@ -3,6 +3,8 @@ import { useEffect, useRef } from 'react'
 // Hooks
 import useDimensions from '../../sizing/hooks/useDimensions'
 import useMousePosition from '../../input/hooks/useMousePosition'
+// Utils
+import { isPointer } from '../../input/utils/isPointer'
 // Types
 import { MagneticProps, Transformable } from '../../../types/animation'
 
@@ -32,10 +34,9 @@ const useRefMagnetic = (
 
   const mousePosition = useMousePosition(magneticField.current, layout)
   const dimensions = useDimensions(magneticField.current)
-  const { width: windowWidth } = useDimensions()
 
   useEffect(() => {
-    if (windowWidth > 1024) {
+    if (isPointer()) {
       const halfWidth = dimensions.width / 2
       const halfHeight = dimensions.height / 2
 
@@ -93,7 +94,7 @@ const useRefMagnetic = (
         }
       }
     }
-  }, [mousePosition, magneticField, rotation, transition, attraction, dimensions, windowWidth])
+  }, [mousePosition, magneticField, rotation, transition, attraction, dimensions])
 
   return magnetRef
 }

@@ -1,5 +1,7 @@
 // React
 import { useState, useEffect } from 'react'
+// Utils
+import { isPointer } from '../utils/isPointer'
 // Types
 import { MousePositionLayout } from '../../../types/input'
 
@@ -19,7 +21,7 @@ const useMousePosition = (
   })
 
   useEffect(() => {
-    if (node) {
+    if (isPointer() && node) {
       const handleMousePosition = (event: MouseEvent) => {
         window.requestAnimationFrame(() => {
           setMousePosition({
