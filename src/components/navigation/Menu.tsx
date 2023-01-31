@@ -7,7 +7,8 @@ import useDimensions from '../../modules/sizing/hooks/useDimensions'
 import { motion } from 'framer-motion'
 // Styles
 import styles from '../../styles/navigation/Menu.module.css'
-import { Actionable } from '../../types/input'
+// Types
+import { MenuProps } from '../../types/navigation'
 
 /** Background animation variants */
 const backgroundVariants = {
@@ -45,10 +46,6 @@ const navVariants = {
     opacity: 0,
     height: 0
   }
-}
-
-interface MenuProps extends Actionable {
-  isOpen: boolean
 }
 
 /**

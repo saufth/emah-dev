@@ -1,4 +1,5 @@
 // Types
+import { Actionable } from './input'
 import { ThemeProps } from './theme'
 
 /** The CallToAction component props */
@@ -22,4 +23,10 @@ export interface NavProps extends ThemeProps {
    * is commonly used for the navbar
    */
   primary?: boolean
+}
+
+/** Menu component props */
+export interface MenuProps extends Actionable {
+  /** Menu status */
+  isOpen: boolean
 }
