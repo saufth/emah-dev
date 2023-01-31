@@ -38,7 +38,7 @@ const Footer = ({ router }: WithRouterProps) => {
         </div>
         <Nav theme={theme} />
         <div className={styles.footAction}>
-          <CallToAction large theme={theme} />
+          <CallToAction large theme='dark' />
         </div>
       </div>
     </footer>
