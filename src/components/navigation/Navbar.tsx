@@ -2,7 +2,7 @@
 import CallToAction from './CallToAction'
 import Image from 'next/image'
 import Link from 'next/link'
-import Menu from './Menu'
+import Menu from '../input/Menu'
 import Nav from './Nav'
 // Hooks
 import useDimensions from '../../modules/sizing/hooks/useDimensions'
@@ -42,24 +42,6 @@ const sidebarVariants = {
       type: 'spring',
       stiffness: 400,
       damping: 40
-    }
-  }
-}
-
-/** Sidebar content animation variants */
-const sidebarNavbarVariants = {
-  open: {
-    opacity: 1,
-    zIndex: 70,
-    transition: {
-      delay: 0.3
-    }
-  },
-  closed: {
-    zIndex: 0,
-    opacity: 0,
-    transition: {
-      delay: 0.3
     }
   }
 }
@@ -111,7 +93,9 @@ const Navbar = () => {
 
         <div className={styles.options}>
           <div className={styles.nav}>
-            <Nav primary theme={theme} />
+            {isOpen
+              ? <CallToAction theme={theme} />
+              : <Nav primary theme={theme} />}
           </div>
           <Menu theme={theme} action={handleToggle} />
         </div>
@@ -121,34 +105,10 @@ const Navbar = () => {
         animate={isOpen ? 'open' : 'closed'}
         custom={width}
       >
-        <motion.header
-          className={`${styles.navbar} ${styles.sidebarNavbar}`}
-          variants={sidebarNavbarVariants}
-        >
-          <div>
-            <Link href='/'>
-              <div className={styles.logo}>
-                <Image
-                  alt='emah logomark'
-                  src={themeConfig.dark.logo}
-                  width={64}
-                  height={48}
-                  priority
-                  className={styles.logomark}
-                />
-              </div>
-            </Link>
-          </div>
-
-          <div className={styles.options}>
-            <div className={styles.sidebarNavContact}>
-              <CallToAction theme='dark' />
-            </div>
-            <div className={styles.sidebarClose} onClick={handleToggle}>
-              Cerrar
-            </div>
-          </div>
-        </motion.header>
+        <motion.div
+          className={styles.sidebarBackground}
+          variants={sidebarVariants}
+        />
 
         <motion.nav
           aria-label='Directorio emah'
@@ -177,11 +137,6 @@ const Navbar = () => {
             </div>
           </div>
         </motion.nav>
-
-        <motion.div
-          className={styles.sidebarBackground}
-          variants={sidebarVariants}
-        />
       </motion.div>
     </>
   )

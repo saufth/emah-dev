@@ -8,7 +8,7 @@
     /* Layout */
     fixed
     top-0
-    z-40
+    z-70
     /* Flexbox & Grid */
     flex
     justify-between
@@ -49,7 +49,7 @@
 .sidebarNavbar {
   @apply
     /* Layout */
-    z-70;
+    z-50;
 }
 
 .sidebarContent {

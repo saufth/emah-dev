@@ -23,9 +23,3 @@ export interface NavProps extends ThemeProps {
    */
   primary?: boolean
 }
-
-/** The Menu component props */
-export interface MenuProps extends ThemeProps {
-  /** The action of the menu button */
-  action?: () => void
-}
