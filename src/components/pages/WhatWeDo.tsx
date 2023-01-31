@@ -37,7 +37,8 @@ const WhatWeDo = () => {
           Lo Que Hacemos
         </h2>
         <p className={styles.description}>
-          Impulsamos empresas con visión, a fin de crear un legado de progreso y verdad
+          Creemos que los mejores resultados son logrados cuando la ejecución
+          del branding y el marketing empujan a la misma dirección
         </p>
         <Link href='about'>
           Conocenos
