@@ -18,7 +18,7 @@ const HomePage = () => {
           <div className='h-auto md:h-3xl max-w-7xl mx-auto flex flex-col-reverse md:flex-row gap-x-5'>
             <div className='w-full md:w-[55%] h-full flex flex-col justify-center gap-y-12'>
               <div className='space-y-6 text-center md:text-left'>
-                <span className='font-cairo-medium text-2xl text-emah-gray/50'>
+                <span className='font-cairo-medium text-xl mdtext-2xl text-emah-gray/50'>
                   Endless Posibilities
                 </span>
                 <header>
