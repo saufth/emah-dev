@@ -31,11 +31,13 @@ const HomePage = () => {
                   a fin de crear un legado de progreso y verdad.
                 </p>
               </div>
-              <div className='flex flex-col sm:flex-row items-center gap-6'>
+              <div className='flex justify-center md:justify-start items-center gap-6'>
                 <CallToAction theme='dark' large />
-                <Link href='/about'>
-                  Conocenos
-                </Link>
+                <div className='hidden md:block'>
+                  <Link href='/about'>
+                    Conocenos
+                  </Link>
+                </div>
               </div>
             </div>
             <div className='my-16 md:my-0 px-16 md:px-0 w-full md:w-[45%] grid place-content-center'>
