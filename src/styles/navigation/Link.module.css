@@ -3,9 +3,6 @@
     /* Spacing */
     w-48
     h-12
-    /** Flexbox & Grid */
-    grid
-    place-content-center
     /* Typography */
     text-sm md:text-base
     leading-none
@@ -13,5 +10,20 @@
     /* Border */
     border
     border-emah-orange
-    rounded-6xl;
+    rounded-6xl
+    /* Animation */
+    transition-transform
+    duration-75;
+}
+.text {
+  @apply
+    /* Spacing */
+    w-full
+    h-full
+    /** Flexbox & Grid */
+    grid
+    place-content-center
+    /* Animation */
+    transition-transform
+    duration-75;
 }

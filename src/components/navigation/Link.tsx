@@ -1,5 +1,7 @@
 // Components
 import NextLink from 'next/link'
+// Hooks
+import useRefMagnetic from '../../modules/animation/hooks/useRefMagnetic'
 // Types
 import { LinkProps } from '../../types/navigation'
 // Styles
@@ -10,12 +12,17 @@ import styles from '../../styles/navigation/Link.module.css'
  * @returns Link component
  */
 const Link = ({ children, href }: LinkProps) => {
+  const fieldRef = useRefMagnetic({ transition: 6 })
+  const textRef = useRefMagnetic({ fieldRef, transition: 4 })
+
   return (
-    <NextLink href={href}>
-      <div className={styles.link}>
-        {children}
-      </div>
-    </NextLink>
+    <div className={styles.link} ref={fieldRef}>
+      <NextLink href={href}>
+        <div className={styles.text} ref={textRef}>
+          {children}
+        </div>
+      </NextLink>
+    </div>
   )
 }
 
