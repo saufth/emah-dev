@@ -1,7 +1,7 @@
 // Components
-import ContactSection from '../components/pages/Contact'
-import Footer from '../components/pages/Footer'
-import Hero from '../components/pages/Hero'
+import ContactSection from '../components/sections/Contact'
+import Footer from '../components/sections/Footer'
+import Hero from '../components/sections/Hero'
 import SmoothLayout from '../components/layout/SmoothLayout'
 
 /**

@@ -1,5 +1,5 @@
 // Components
-import Showcase from '../../components/data-display/Showcase'
+import Showcase from '../data-display/Showcase'
 // Styles
 import styles from '../../styles/pages/About.module.css'
 // Types

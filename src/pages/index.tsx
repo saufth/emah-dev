@@ -1,7 +1,7 @@
 // Components
-import Footer from '../components/pages/Footer'
+import Footer from '../components/sections/Footer'
 import HomeLayout from '../components/layout/HomeLayout'
-import WhatWeDo from '../components/pages/WhatWeDo'
+import WhatWeDo from '../components/sections/WhatWeDo'
 import CallToAction from '../components/navigation/CallToAction'
 import Link from '../components/navigation/Link'
 import Image from 'next/image'

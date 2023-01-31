@@ -1,8 +1,8 @@
 // Components
-import About from '../components/pages/About'
+import About from '../components/sections/About'
 import AboutLayout from '../components/layout/AboutLayout'
-import Footer from '../components/pages/Footer'
-import Hero from '../components/pages/Hero'
+import Footer from '../components/sections/Footer'
+import Hero from '../components/sections/Hero'
 // Styles
 import styles from '../styles/pages/About.module.css'
 
