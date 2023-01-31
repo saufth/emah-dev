@@ -5,10 +5,10 @@ import Link from 'next/link'
 import useDimensions from '../../modules/sizing/hooks/useDimensions'
 // Animation
 import { motion } from 'framer-motion'
-// Styles
-import styles from '../../styles/navigation/Menu.module.css'
 // Types
 import { MenuProps } from '../../types/navigation'
+// Styles
+import styles from '../../styles/navigation/Menu.module.css'
 
 /** Background animation variants */
 const backgroundVariants = {

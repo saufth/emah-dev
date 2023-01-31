@@ -1,7 +1,7 @@
-// Styles
-import styles from '../../styles/input/MenuButton.module.css'
 // Types
 import { InputProps } from '../../types/input'
+// Styles
+import styles from '../../styles/input/MenuButton.module.css'
 
 /**
 * The main menu button of the application

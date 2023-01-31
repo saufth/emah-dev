@@ -5,10 +5,10 @@ import usePhysics from '../../modules/animation/hooks/usePhysics'
 import useDimensions from '../../modules/sizing/hooks/useDimensions'
 // Animation
 import { useScroll, useTransform, useSpring, motion } from 'framer-motion'
-// Styles
-import styles from '../../styles/layout/HomeLayout.module.css'
 // Types
 import { ParentProps } from '../../types/layout'
+// Styles
+import styles from '../../styles/layout/HomeLayout.module.css'
 
 /**
  * Create a scrolleable container with ease effect for Home page

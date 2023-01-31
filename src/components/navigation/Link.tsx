@@ -1,9 +1,9 @@
 // Components
 import NextLink from 'next/link'
-// Styles
-import styles from '../../styles/navigation/Link.module.css'
 // Types
 import { LinkProps } from '../../types/navigation'
+// Styles
+import styles from '../../styles/navigation/Link.module.css'
 
 /**
  * Used to navigate between pages

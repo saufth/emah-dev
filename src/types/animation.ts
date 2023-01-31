@@ -1,6 +1,6 @@
 // Types
-import { RefObject } from 'react'
 import { MousePositionLayout } from './input'
+import { RefObject } from 'react'
 
 /** Use to define physic configuration */
 export interface Physics {

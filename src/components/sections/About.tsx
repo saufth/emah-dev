@@ -1,9 +1,9 @@
 // Components
 import Showcase from '../data-display/Showcase'
-// Styles
-import styles from '../../styles/pages/About.module.css'
 // Types
 import { ShowcaseProps } from '../../types/data-display'
+// Styles
+import styles from '../../styles/pages/About.module.css'
 
 /** About page configuration */
 const aboutUsConfig: ShowcaseProps[] = [

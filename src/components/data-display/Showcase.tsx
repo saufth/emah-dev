@@ -1,9 +1,9 @@
 // Components
 import CallToAction from '../navigation/CallToAction'
-// Styles
-import styles from '../../styles/data-display/Showcase.module.css'
 // Types
 import { ShowcaseProps } from '../../types/data-display'
+// Styles
+import styles from '../../styles/data-display/Showcase.module.css'
 
 /**
  * Using to show a image with a heading and descriptions

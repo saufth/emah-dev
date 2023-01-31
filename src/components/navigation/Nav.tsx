@@ -1,10 +1,10 @@
 // Components
 import CallToAction from './CallToAction'
 import Link from 'next/link'
-// Styles
-import styles from '../../styles/navigation/Nav.module.css'
 // Types
 import { LinkProps, NavProps } from '../../types/navigation'
+// Styles
+import styles from '../../styles/navigation/Nav.module.css'
 
 /** The navigation configuration */
 const navConfig: LinkProps[] = [

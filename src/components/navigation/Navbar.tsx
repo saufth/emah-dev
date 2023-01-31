@@ -2,15 +2,15 @@
 import CallToAction from './CallToAction'
 import Image from 'next/image'
 import Link from 'next/link'
+import Menu from './Menu'
 import MenuButton from '../input/MenuButton'
 import Nav from './Nav'
 // Animation
 import { useCycle } from 'framer-motion'
-// Styles
-import styles from '../../styles/navigation/Navbar.module.css'
 // Types
 import { Theme } from '../../types/theme'
-import Menu from './Menu'
+// Styles
+import styles from '../../styles/navigation/Navbar.module.css'
 
 /** Theme configuration for Navbar */
 const themeConfig = {

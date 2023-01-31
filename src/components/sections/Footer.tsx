@@ -4,10 +4,10 @@ import Link from 'next/link'
 import Nav from '../navigation/Nav'
 // Next router
 import withRouter, { WithRouterProps } from 'next/dist/client/with-router'
-// Styles
-import styles from '../../styles/pages/Footer.module.css'
 // Types
 import { Theme } from '../../types/theme'
+// Styles
+import styles from '../../styles/pages/Footer.module.css'
 
 /**
  * The footer section of application

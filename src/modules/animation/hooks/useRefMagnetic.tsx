@@ -28,68 +28,70 @@ const useRefMagnetic = (
   }: MagneticProps
 ) => {
   const magnetRef = useRef<HTMLDivElement>(null)
-
   const magneticField = fieldRef || magnetRef
 
   const mousePosition = useMousePosition(magneticField.current, layout)
   const dimensions = useDimensions(magneticField.current)
+  const { width: windowWidth } = useDimensions()
 
   useEffect(() => {
-    const halfWidth = dimensions.width / 2
-    const halfHeight = dimensions.height / 2
+    if (windowWidth > 1024) {
+      const halfWidth = dimensions.width / 2
+      const halfHeight = dimensions.height / 2
 
-    const orientation = attraction ? 1 : -1
+      const orientation = attraction ? 1 : -1
 
-    const updateTransformStyle = ({ transition, rotation }: Transformable) => {
-      const node = magnetRef.current
+      const updateTransformStyle = ({ transition, rotation }: Transformable) => {
+        const node = magnetRef.current
+        if (node) {
+          node.style.transform = `
+          translate3d(${transition.x}px, ${transition.y}px, 0px)
+          rotateX(${rotation.x}deg)
+          rotateY(${rotation.y}deg)
+        `
+        }
+      }
+
+      const variationX = (mousePosition.x - halfWidth) / halfWidth
+      const variationY = (mousePosition.y - halfHeight) / halfHeight
+
+      const transform: Transformable = {
+        transition: {
+          x: (variationX * (transition * strength)) * orientation,
+          y: (variationY * transition) * orientation
+        },
+        rotation: {
+          x: (variationY * (rotation * strength)) * orientation,
+          y: (variationX * rotation) * (-orientation)
+        }
+      }
+
+      const handleMagnetic = () => {
+        window.requestAnimationFrame(() => {
+          updateTransformStyle(transform)
+        })
+      }
+
+      const handleMouseOut = () => {
+        updateTransformStyle({
+          transition: { x: 0, y: 0 },
+          rotation: { x: 0, y: 0 }
+        })
+      }
+
+      const node = magneticField.current
+
       if (node) {
-        node.style.transform = `
-        translate3d(${transition.x}px, ${transition.y}px, 0px)
-        rotateX(${rotation.x}deg)
-        rotateY(${rotation.y}deg)
-      `
+        node.addEventListener('mousemove', handleMagnetic)
+        node.addEventListener('mouseout', handleMouseOut)
+
+        return () => {
+          node.removeEventListener('mousemove', handleMagnetic)
+          node.removeEventListener('mouseout', handleMouseOut)
+        }
       }
     }
-
-    const variationX = (mousePosition.x - halfWidth) / halfWidth
-    const variationY = (mousePosition.y - halfHeight) / halfHeight
-
-    const transform: Transformable = {
-      transition: {
-        x: (variationX * (transition * strength)) * orientation,
-        y: (variationY * transition) * orientation
-      },
-      rotation: {
-        x: (variationY * (rotation * strength)) * orientation,
-        y: (variationX * rotation) * (-orientation)
-      }
-    }
-
-    const handleMagnetic = () => {
-      window.requestAnimationFrame(() => {
-        updateTransformStyle(transform)
-      })
-    }
-
-    const handleMouseOut = () => {
-      updateTransformStyle({
-        transition: { x: 0, y: 0 },
-        rotation: { x: 0, y: 0 }
-      })
-    }
-
-    const node = magneticField.current
-
-    if (node) {
-      node.addEventListener('mousemove', handleMagnetic)
-      node.addEventListener('mouseout', handleMouseOut)
-
-      return () => {
-        node.removeEventListener('mousemove', handleMagnetic)
-        node.removeEventListener('mouseout', handleMouseOut)
-      }
-    }
-  }, [mousePosition, magneticField, rotation, transition, attraction, dimensions])
+  }, [mousePosition, magneticField, rotation, transition, attraction, dimensions, windowWidth])
 
   return magnetRef
 }
