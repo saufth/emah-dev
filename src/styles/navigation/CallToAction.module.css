@@ -1,0 +1,39 @@
+.action {
+  @apply
+    /* Sizing */
+    w-32
+    h-10
+    /* Flexbox & Grid */
+    grid
+    place-content-center
+    /* Typography */
+    font-proxima-soft-semibold
+    text-sm
+    /* Border */
+    rounded-3xl;
+}
+
+.large {
+  @apply
+    /* Sizing */
+    w-48
+    h-12
+    /* Typography */
+    text-base;
+}
+
+.actionLight {
+  @apply
+    /* Typography */
+    text-emah-gray
+    /* Background */
+    bg-white;
+}
+
+.actionDark {
+  @apply
+    /* Typography */
+    text-white
+    /* Background */
+    bg-emah-blue;
+}

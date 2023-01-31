@@ -1,0 +1,57 @@
+.section {
+  @apply
+    /* Sizing */
+    w-full
+    h-auto
+    top-0;
+}
+
+.sectionHeight {
+  @apply
+    /* Sizing */
+    h-xl;
+}
+
+.header {
+  @apply
+    /* Sizing */
+    w-full
+    h-full
+    /* Layout */
+    grid
+    place-content-center
+    gap-y-6;
+}
+
+.heading {
+  @apply
+    /* Typography */
+    font-proxima-soft-medium
+    text-center
+    tracking-wide md:tracking-widest;
+}
+
+.themeDark {
+  @apply
+    /* Typography */
+    text-emah-dark;
+}
+
+.textLarge {
+  @apply
+    /* Typography */
+    text-5xl md:text-6xl;
+}
+
+.textMedium {
+  @apply
+    /* Typography */
+    text-4xl md:text-5xl;
+}
+
+.space {
+  @apply
+    /* Sizing */
+    max-w-3xl
+    mx-auto;
+}
