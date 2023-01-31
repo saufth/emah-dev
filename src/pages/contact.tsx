@@ -1,5 +1,5 @@
 // Components
-import ContactSection from '../components/sections/Contact'
+import Contact from '../components/sections/Contact'
 import Footer from '../components/sections/Footer'
 import Hero from '../components/sections/Hero'
 import SmoothLayout from '../components/layout/SmoothLayout'
@@ -22,7 +22,7 @@ const ContactPage = () => {
             </div>
           </span>
         </Hero>
-        <ContactSection />
+        <Contact />
       </main>
       <Footer />
     </SmoothLayout>

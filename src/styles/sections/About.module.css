@@ -1,16 +1,3 @@
-.hero {
-  @apply
-    /* Typography */
-    leading-tight;
-}
-
-.section {
-  @apply
-    /* Spacing */
-    pb-16
-    mt-[1024px] sm:mt-[840px];
-}
-
 .header {
   @apply
     /* Sizing */
@@ -33,13 +20,15 @@
 .description {
   @apply
     /* Typography */
-    text-2xl sm:text-2xl md:text-3xl
-    leading-relaxed sm:leading-relaxed md:leading-relaxed;
+    font-proxima-soft-medium
+    text-2xl sm:text-3xl md:text-4xl
+    leading-snug sm:leading-snug md:leading-snug
+    tracking-wide md:tracking-widest;
 }
 
 .showcase {
   @apply
     /* Spacing */
-    mt-24
+    mt-64
     space-y-36 md:space-y-40;
 }

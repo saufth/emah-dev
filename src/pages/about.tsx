@@ -7,7 +7,7 @@ import Hero from '../components/sections/Hero'
 import { AboutProps } from '../types/sections'
 
 /** About page configuration */
-const aboutPageConfig: AboutProps = {
+const aboutConfig: AboutProps = {
   heading: 'Nosotros',
   description: 'El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos. Aquí te presentamos los más importantes para nosotros, mismos que forman parte de nuestro ADN y que son clave en la generación de soluciones de valor para nuestros clientes',
   showcases: [
@@ -85,7 +85,9 @@ const AboutPage = () => {
         <Hero theme='dark' text='md' space height>
           Impulsamos empresas con visión, a fin de crear un legado de progreso y verdad
         </Hero>
-        <About {...aboutPageConfig} />
+        <div className='pb-16 mt-[1024px] sm:mt-[840px]'>
+          <About {...aboutConfig} />
+        </div>
         <Footer />
       </main>
     </AboutLayout>

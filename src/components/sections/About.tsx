@@ -13,7 +13,7 @@ import styles from '../../styles/sections/About.module.css'
  */
 const About = ({ heading, description, showcases }: AboutProps) => {
   return (
-    <section className={styles.section}>
+    <section>
       <header className={styles.header}>
         <h2 className={styles.heading}>
           {heading}
