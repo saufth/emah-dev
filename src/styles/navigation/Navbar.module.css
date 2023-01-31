@@ -12,7 +12,11 @@
     /* Flexbox & Grid */
     flex
     justify-between
-    items-center;
+    items-center
+    /* Background */
+    bg-white/70
+    backdrop-filter
+    backdrop-blur;
 }
 
 .options {

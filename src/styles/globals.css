@@ -38,12 +38,6 @@
       no-underline;
   }
 
-  h1, h2, h3 {
-    @apply
-      /* Typography */
-      font-proxima-soft-medium;
-  }
-
   h1 {
     @apply
       /* Typography */
@@ -51,11 +45,16 @@
       text-5xl md:text-6xl;
   }
 
+  h2, h3 {
+    @apply
+      /* Typography */
+      font-proxima-soft-medium;
+  }
+
   h2 {
     @apply
       /* Typography */
-      text-4xl md:text-4.5xl lg:text-5xl
-      leading-none;
+      text-4xl md:text-4.5xl lg:text-5xl;
   }
 
   h3 {

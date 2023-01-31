@@ -36,10 +36,10 @@ const WhatWeDo = () => {
         <h2 className={styles.heading}>
           Lo Que Hacemos
         </h2>
-        <p className={styles.description}>
+        <div className={styles.description}>
           Creemos que los mejores resultados son logrados cuando la ejecución
           del branding y el marketing empujan a la misma dirección
-        </p>
+        </div>
         <Link href='about'>
           Conocenos
         </Link>

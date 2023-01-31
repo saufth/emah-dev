@@ -4,12 +4,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Menu from './Menu'
 import Nav from './Nav'
-// React
-import { useState } from 'react'
 // Hooks
 import useDimensions from '../../modules/sizing/hooks/useDimensions'
 // Animation
-import { motion, useCycle, useMotionValueEvent, useScroll } from 'framer-motion'
+import { motion, useCycle } from 'framer-motion'
 // Styles
 import styles from '../../styles/navigation/Navbar.module.css'
 // Types
@@ -83,8 +81,6 @@ const sidebarContentVariants = {
 
 /**
  * The main navbar of application
- * @see {@link WithRouterProps} for props definition
- * @param {WithRouterProps} WithRouterProps The Footer component porps
  * @returns Navbar component
  */
 const Navbar = () => {
@@ -92,12 +88,6 @@ const Navbar = () => {
   // Animation
   const { width } = useDimensions()
   const [isOpen, toggle] = useCycle(false, true)
-  const [isScrollOnTop, setIsScrollOnTop] = useState(true)
-  const { scrollY } = useScroll()
-
-  useMotionValueEvent(scrollY, 'change', (latestScrollY) => {
-    setIsScrollOnTop(latestScrollY < 24)
-  })
 
   const handleToggle = () => toggle()
 
@@ -121,9 +111,7 @@ const Navbar = () => {
 
         <div className={styles.options}>
           <div className={styles.nav}>
-            {isScrollOnTop
-              ? <Nav primary theme={theme} />
-              : <CallToAction theme={theme} />}
+            <Nav primary theme={theme} />
           </div>
           <Menu theme={theme} action={handleToggle} />
         </div>

@@ -28,12 +28,11 @@
   @apply
     /* Sizing */
     max-w-5xl
-    /* Spacing */
     /* Typography */
     font-proxima-soft-medium
     text-3xl sm:text-4xl md:text-5xl
-    text-emah-dark
-    leading-snug;
+    leading-snug md:leading-[64px]
+    text-emah-dark;
 }
 
 .showcase {
