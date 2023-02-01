@@ -16,9 +16,9 @@ export interface HeroProps extends ParentProps, ThemeProps {
 /** About component props */
 export interface AboutProps {
   /** Section heading */
-  heading: string
+  heading?: string
   /** Section description */
-  description: string
+  description?: string
   /** Section showcases */
   showcases: ShowcaseProps[]
 }

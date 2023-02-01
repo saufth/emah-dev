@@ -1,7 +1,7 @@
 .header {
   @apply
     /* Sizing */
-    max-w-4xl
+    max-w-6xl
     mx-auto
     /* Spacing */
     space-y-12 md:space-y-14
@@ -14,7 +14,8 @@
   @apply
     /* Typography */
     text-xl md:text-2xl
-    text-emah-gray;
+    text-emah-gray
+    tracking-widest;
 }
 
 .description {

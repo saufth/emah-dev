@@ -14,14 +14,18 @@ import styles from '../../styles/sections/About.module.css'
 const About = ({ heading, description, showcases }: AboutProps) => {
   return (
     <section>
-      <header className={styles.header}>
-        <h2 className={styles.heading}>
-          {heading}
-        </h2>
-        <p className={styles.description}>
-          {description}
-        </p>
-      </header>
+      {heading && description
+        ? (
+          <header className={styles.header}>
+            <h2 className={styles.heading}>
+              {heading}
+            </h2>
+            <p className={styles.description}>
+              {description}
+            </p>
+          </header>
+          )
+        : null}
       <div className={styles.showcase}>
         {showcases.map((about, key) => (
           <Showcase

@@ -81,6 +81,11 @@ const Menu = ({ isOpen, action }: MenuProps) => {
           </Link>
         </div>
         <div className={styles.option} onClick={action}>
+          <Link href='/services'>
+            Servicios
+          </Link>
+        </div>
+        <div className={styles.option} onClick={action}>
           <Link href='/contact' className={styles.contact}>
             Contacto
           </Link>
