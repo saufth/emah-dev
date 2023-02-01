@@ -9,7 +9,7 @@
     max-w-3xl
     h-lg sm:h-md
     /* Spacing */
-    my-36
+    my-24 md:my-36
     mx-auto
     /* Layout */
     overflow-hidden
