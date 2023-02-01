@@ -22,7 +22,7 @@
     mx-4 md:mx-auto
     /* Layout */
     fixed
-    top-[560px]
+    top-[640px] md:top-[560px]
     left-0
     right-0
     z-10
