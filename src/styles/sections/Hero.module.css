@@ -20,14 +20,25 @@
     /* Layout */
     grid
     place-content-center
-    gap-y-6;
+    gap-y-6
+    /* Typography */
+    font-proxima-soft-medium
+    text-center;
+}
+
+.label {
+  @apply
+    /* Spacing */
+    mb-5 md:mb-6
+    /* Typography */
+    text-xl md:text-2xl
+    tracking-widest
+    text-emah-gray;
 }
 
 .heading {
   @apply
     /* Typography */
-    font-proxima-soft-medium
-    text-center
     leading-normal md:leading-normal
     tracking-wide md:tracking-widest;
 }

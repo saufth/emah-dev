@@ -12,7 +12,7 @@ const ContactPage = () => {
   return (
     <SmoothLayout>
       <main className='mt-48'>
-        <Hero space theme='dark'>
+        <Hero space>
           <span className='text-left tracking-normal'>
             <div className='text-base md:text-lg mb-2'>
               ¿Tienes algun proyecto en mente?

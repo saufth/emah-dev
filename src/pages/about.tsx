@@ -82,8 +82,7 @@ const AboutPage = () => {
   return (
     <AboutLayout>
       <main>
-        <Hero theme='dark' text='md' height>
-          <div className='mb-12 font-proxima-soft-medium text-xl md:text-2xl tracking-widest text-emah-gray'>Proposito</div>
+        <Hero label='Proposito' text='md' height>
           Impulsamos empresas con visión, a fin de crear un legado de progreso y verdad
         </Hero>
         <div className='pb-16 mt-[1024px]'>

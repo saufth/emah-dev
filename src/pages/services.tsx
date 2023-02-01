@@ -40,8 +40,7 @@ const ServicesPage = () => {
   return (
     <SmoothLayout>
       <main>
-        <Hero theme='dark' text='md' height>
-          <div className='mb-12 text-lg text-emah-gray'>Servicios</div>
+        <Hero label='Servicios' text='md' height>
           Desarollamos apps, websites y branding en sincronía con el marketing
         </Hero>
         <div className='pb-16'>

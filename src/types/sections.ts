@@ -1,10 +1,11 @@
 // Types
 import { ParentProps } from './layout'
 import { ShowcaseProps } from './data-display'
-import { ThemeProps } from './theme'
 
 /** The Hero component props */
-export interface HeroProps extends ParentProps, ThemeProps {
+export interface HeroProps extends ParentProps {
+  /** Heading label */
+  label?: string
   /** Heading text sizes */
   text?: 'md' | 'lg'
   /** Define the space in X axis */

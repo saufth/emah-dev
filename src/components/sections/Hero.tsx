@@ -12,26 +12,30 @@ import styles from '../../styles/sections/Hero.module.css'
 const Hero = (
   {
     children,
-    theme = 'light',
+    label,
     space,
     text = 'lg',
     height
   }: HeroProps
 ) => {
-  const sectionStyle = `${styles.section} ${height ? styles.sectionHeight : ''}`
-  const themeStyle = theme === 'dark' ? styles.themeDark : ''
   const spaceStyle = space ? styles.space : ''
-  const contentStyle = `${themeStyle} ${spaceStyle}`
+  const heightStyle = height ? styles.sectionHeight : ''
+  const sectionStyle = `${styles.section} ${heightStyle} ${spaceStyle}`
   const sizeStyle = text === 'lg' ? styles.textLarge : styles.textMedium
   const headingStyle = `${styles.heading} ${sizeStyle}`
 
   return (
     <section className={sectionStyle}>
       <header className={styles.header}>
+        {label
+          ? (
+            <div className={styles.label}>
+              {label}
+            </div>
+            )
+          : null}
         <h1 className={headingStyle}>
-          <div className={contentStyle}>
-            {children}
-          </div>
+          {children}
         </h1>
       </header>
     </section>
