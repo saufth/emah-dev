@@ -1,6 +1,6 @@
 // Components
 import About from '../components/sections/About'
-import AboutLayout from '../components/layout/AboutLayout'
+import SmoothLayout from '../components/layout/SmoothLayout'
 import Footer from '../components/sections/Footer'
 import Header from '../components/sections/Header'
 // Types
@@ -81,17 +81,18 @@ const aboutConfig: AboutProps = {
  */
 const AboutPage = () => {
   return (
-    <AboutLayout>
+    <SmoothLayout>
       <main>
         <Header
           description='El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos hacia el mismo objetivo.'
         />
-        <div className={styles.about}>
-          <About {...aboutConfig} />
+        <div>
+          <div className={styles.imageContainer} />
         </div>
+        <About {...aboutConfig} />
         <Footer />
       </main>
-    </AboutLayout>
+    </SmoothLayout>
   )
 }
 
