@@ -32,11 +32,13 @@ const Navbar = () => {
 
   const handleToggle = () => toggle()
 
+  const closeToggle = () => isOpen && toggle()
+
   return (
     <>
       <header className={styles.navbar}>
         <div>
-          <Link href='/' onClick={handleToggle}>
+          <Link href='/' onClick={closeToggle}>
             <div className={styles.logo}>
               <Image
                 alt='emah logomark'
