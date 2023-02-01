@@ -4,6 +4,7 @@ import CallToAction from '../navigation/CallToAction'
 import { ShowcaseProps } from '../../types/data-display'
 // Styles
 import styles from '../../styles/data-display/Showcase.module.css'
+import Link from '../navigation/Link'
 
 /**
  * Using to show a image with a heading and descriptions
@@ -18,6 +19,7 @@ const Showcase = (
     image,
     theme = 'light',
     action,
+    link,
     large,
     reverse
   }: ShowcaseProps
@@ -51,7 +53,9 @@ const Showcase = (
               ))}
             </div>
           </div>
-          {action ? <CallToAction theme='dark' large /> : null}
+          {action
+            ? <CallToAction theme='dark' large />
+            : link ? <Link href={link}>Saber más</Link> : null}
         </div>
       </div>
 

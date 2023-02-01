@@ -11,18 +11,22 @@ import styles from '../../styles/sections/About.module.css'
  * @param {AboutProps} AboutProps About section component props
  * @returns About section component
  */
-const About = ({ heading, description, showcases }: AboutProps) => {
+const About = ({ heading, description, showcases, action, link }: AboutProps) => {
   return (
     <section>
-      {heading && description
+      {description
         ? (
           <header className={styles.header}>
-            <h2 className={styles.heading}>
-              {heading}
-            </h2>
-            <p className={styles.description}>
+            {heading
+              ? (
+                <h2 className={styles.heading}>
+                  {heading}
+                </h2>
+                )
+              : null}
+            <h2 className={styles.description}>
               {description}
-            </p>
+            </h2>
           </header>
           )
         : null}
@@ -34,6 +38,8 @@ const About = ({ heading, description, showcases }: AboutProps) => {
             image={about.image}
             theme='dark'
             large
+            action={action}
+            link={link}
             reverse={key % 2 !== 0}
             key={key}
           />

@@ -22,7 +22,6 @@
     place-content-center
     gap-y-6
     /* Typography */
-    font-proxima-soft-medium
     text-center;
 }
 
@@ -31,6 +30,7 @@
     /* Spacing */
     mb-5 md:mb-6
     /* Typography */
+    font-proxima-soft-medium
     text-xl md:text-2xl
     tracking-widest
     text-emah-gray;
@@ -39,6 +39,7 @@
 .heading {
   @apply
     /* Typography */
+    font-proxima-soft-medium
     leading-normal md:leading-normal
     tracking-wide md:tracking-widest;
 }

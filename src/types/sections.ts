@@ -22,4 +22,8 @@ export interface AboutProps {
   description?: string
   /** Section showcases */
   showcases: ShowcaseProps[]
+  /** Set a callToAction on each Showcase */
+  action?: boolean
+  /** Set a Link on each Showcase */
+  link?: string
 }

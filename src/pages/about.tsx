@@ -8,8 +8,7 @@ import { AboutProps } from '../types/sections'
 
 /** About page configuration */
 const aboutConfig: AboutProps = {
-  heading: 'Nosotros',
-  description: 'El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos. Aquí te presentamos los más importantes para nosotros, mismos que forman parte de nuestro ADN y que son clave en la generación de soluciones de valor para nuestros clientes',
+  description: 'Aquí te presentamos los más importantes para nosotros, mismos que forman parte de nuestro ADN y que son clave en la generación de soluciones de valor para nuestros clientes',
   showcases: [
     {
       heading: 'Trabajamos en equipo',
@@ -82,8 +81,8 @@ const AboutPage = () => {
   return (
     <AboutLayout>
       <main>
-        <Hero label='Proposito' text='md' height>
-          Impulsamos empresas con visión, a fin de crear un legado de progreso y verdad
+        <Hero label='Nosotros' text='md' height>
+          El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos
         </Hero>
         <div className='pb-16 mt-[1024px]'>
           <About {...aboutConfig} />

@@ -8,26 +8,42 @@ import { AboutProps } from '../types/sections'
 
 /** About section configuration */
 const aboutConfig: AboutProps = {
+  action: true,
   showcases: [
     {
       heading: 'Marketing',
-      descriptions: ['Impulsamos a las marcas a la dirección adecuada. Creamos lazos de alianza con negocios que buscan crecimiento. Los que buscan un cambio para progresar. Ayudamos a recuperar atención en los medios, lograr sus metas y asegurar un crecimiento exponencial. Y solo es el comienzo..'],
+      descriptions: [
+        'Análisis y estrategia',
+        'Campañas eficientes y creativas (Inbound & outbound marketing)',
+        'Marketing de contenidos',
+        'Social & influencer marketing',
+        'Performance marketing (SEO, SEM, SEA, PPC, Email marketing)'
+      ],
       image: 'marketing'
     },
     {
       heading: 'Branding',
-      descriptions: ['Construimos marcas sobresalientes, creamos el ADN de marca y desarrollamos sistemas funcionales de comunicación visual. Le damos forma al carácter de tu marca, una imagen atractiva y una identidad única. Ademas, renovamos marcas existentes.'],
+      descriptions: [
+        'Naming',
+        'Diseño de logo',
+        'Identidad visual',
+        'Identidad de marca',
+        'Diseño de producto y empaque',
+        'Brand culture',
+        'Consultoría y capacitación'
+      ],
       image: 'branding'
     },
     {
       heading: 'Development',
-      descriptions: ['Creemos que una página web le da cuerpo a la identidad de tu marca. Es por eso que desarrollamos sistemas responsivos con un propósito mas grande que solo informar. Buscamos crear sitios web que sean reactivos al cambio, generen una experiencia positiva y mueva tus emociones.'],
+      descriptions: [
+        'Front-end development',
+        'Back-end development',
+        'Mobile apps',
+        'Landing page',
+        'Consultoria y asesoria'
+      ],
       image: 'development'
-    },
-    {
-      heading: 'Design',
-      descriptions: ['No es tan simple con solo tener un logo. Para ser distinguido, es necesario establecer algunos parámetros que se usen siempre, un concepto de diseño. Definimos elementos visuales, colores y tipografía. Creamos presentaciones visuales únicas y consistentes para marcas sobresalientes.'],
-      image: 'design'
     }
   ]
 }
@@ -39,9 +55,10 @@ const aboutConfig: AboutProps = {
 const ServicesPage = () => {
   return (
     <SmoothLayout>
-      <main>
-        <Hero label='Servicios' text='md' height>
-          Desarollamos apps, websites y branding en sincronía con el marketing
+      <main className='pt-44'>
+        <Hero label='Servicios' text='md'>
+          Creemos que los mejores resultados son logrados cuando la ejecución
+          del branding y el marketing empujan a la misma dirección
         </Hero>
         <div className='pb-16'>
           <About {...aboutConfig} />

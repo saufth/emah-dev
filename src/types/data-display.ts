@@ -19,10 +19,12 @@ export interface ShowcaseProps extends ThemeProps {
     | 'strategy'
     | 'prevent'
     | 'progress'
-  /** Set the call to action button */
-  action?: boolean
   /** Set the demo width to large */
   large?: boolean
+  /** Set a CallToAction button */
+  action?: boolean
+  /** Set a Link from the specific route */
+  link?: string
   /** Invert the order of content */
   reverse?: boolean
 }

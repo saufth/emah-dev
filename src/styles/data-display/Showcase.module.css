@@ -59,7 +59,7 @@
 .descriptions {
   @apply
     /* Spacing */
-    space-y-2 sm:space-y-4
+    space-y-2 sm:space-y-3
     /* Typography */
     font-proxima-soft-medium md:font-proxima-soft-semibold
     text-base lg:text-lg;

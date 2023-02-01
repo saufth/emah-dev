@@ -11,7 +11,8 @@ import { AboutProps } from '../types/sections'
 /** About section configuration */
 const aboutConfig: AboutProps = {
   heading: 'Lo Que Hacemos',
-  description: 'Creemos que los mejores resultados son logrados cuando la ejecución del branding y el marketing empujan a la misma dirección',
+  link: '/services',
+  description: 'Impulsamos empresas con visión, a fin de crear un legado de progreso y verdad',
   showcases: [
     {
       heading: 'Marketing',
@@ -81,7 +82,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <div className='mt-48'>
+        <div className='mt-48 md:mt-24'>
           <About {...aboutConfig} />
         </div>
       </main>
