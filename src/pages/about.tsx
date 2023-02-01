@@ -10,7 +10,7 @@ import styles from '../styles/pages/AboutPage.module.css'
 
 /** About page configuration */
 const aboutConfig: AboutProps = {
-  description: 'Te presentamos las soluciones más importantes para nosotros. Estas forman parte de nuestro ADN y son clave en la generación de valor para nuestros clientes.',
+  description: 'Te presentamos nuestra estrategia de trabajo, el como ejecutamos nuestros dia a dia. Estos aspectos forman parte de nuestro ADN y son clave en la generación de valor para nuestros clientes.',
   showcases: [
     {
       heading: 'Trabajamos en equipo',

@@ -48,9 +48,11 @@ const Showcase = (
               ))}
             </div>
           </div>
-          {action
-            ? <CallToAction large />
-            : link ? <Link href={link}>Saber más</Link> : null}
+          <div className='flex justify-center'>
+            {action
+              ? <CallToAction large />
+              : link ? <Link href={link}>Saber más</Link> : null}
+          </div>
         </div>
       </div>
 
