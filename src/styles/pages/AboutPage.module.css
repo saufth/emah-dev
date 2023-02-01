@@ -1,0 +1,5 @@
+.about {
+  @apply
+    /* Spacing */
+    mt-[1196px] md:mt-[1024px];
+}

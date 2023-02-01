@@ -5,6 +5,8 @@ import Footer from '../components/sections/Footer'
 import Header from '../components/sections/Header'
 // Types
 import { AboutProps } from '../types/sections'
+// Styles
+import styles from '../styles/pages/AboutPage.module.css'
 
 /** About page configuration */
 const aboutConfig: AboutProps = {
@@ -85,7 +87,7 @@ const AboutPage = () => {
           heading='Nosotros'
           description='El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos'
         />
-        <div className='pb-16 mt-[1196px] md:mt-[1024px]'>
+        <div className={styles.about}>
           <About {...aboutConfig} />
         </div>
         <Footer />

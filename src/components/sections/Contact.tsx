@@ -69,12 +69,13 @@ const Contact = () => {
             required
           />
         </div>
-        <div className='pt-6 flex justify-center'>
-          <div className='w-64 h-12'>
-            <button type='submit' className='w-full h-full rounded-3xl font-proxima-soft-medium text-white bg-emah-blue'>
-              Enviar
-            </button>
-          </div>
+        <div className={styles.options}>
+          <button
+            className={styles.submit}
+            type='submit'
+          >
+            Enviar
+          </button>
         </div>
       </form>
     </section>
