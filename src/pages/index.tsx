@@ -49,17 +49,16 @@ const HomePage = () => {
           <div className='h-auto md:h-3xl max-w-7xl mx-auto flex flex-col-reverse md:flex-row gap-x-5'>
             <div className='w-full md:w-[55%] h-full flex flex-col justify-center gap-y-12'>
               <div className='space-y-6 text-center md:text-left'>
-                <span className='font-cairo-medium text-xl mdtext-2xl text-emah-gray/50'>
+                {/* <span className='font-cairo-medium text-xl mdtext-2xl text-emah-gray/50'>
                   Endless Posibilities
-                </span>
+                </span> */}
                 <header>
                   <h1>
                     <span className='text-emah-blue'>Hacemos</span> marketing estratégico
                   </h1>
                 </header>
                 <p className='text-xl text-emah-gray'>
-                  Desarollamos apps, websites y branding. Impulsamos empresas con visión
-                  a fin de crear un legado de progreso y verdad.
+                  Desarollamos websites, apps y branding en sincronía con el marketing.
                 </p>
               </div>
               <div className='flex justify-center md:justify-start items-center gap-6'>
