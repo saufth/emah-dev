@@ -1,10 +1,12 @@
 .container {
   @apply
     /* Sizing */
-    w-full
+    max-w-7xl
     h-auto md:h-md lg:h-xl
     [&>div]:w-full [&>div]:md:w-1/2
     [&>div]:h-auto [&>div]:md:h-full
+    /* Spacing */
+    mx-auto
     /* Flexbox & Grid */
     flex
     flex-col-reverse md:flex-row

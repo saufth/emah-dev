@@ -89,7 +89,7 @@ const Menu = ({ isOpen, action }: MenuProps) => {
         <div className={styles.option} onClick={action}>
           <SocialNav />
         </div>
-        <div className={styles.option} onClick={action}>
+        <div className={styles.action} onClick={action}>
           <CallToAction large />
         </div>
       </motion.div>
