@@ -80,11 +80,11 @@ const aboutConfig: AboutProps = {
 const AboutPage = () => {
   return (
     <AboutLayout>
-      <main>
-        <Hero label='Nosotros' text='md' height>
+      <main className='pt-44'>
+        <Hero label='Nosotros' text='md'>
           El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos
         </Hero>
-        <div className='pb-16 mt-[1024px]'>
+        <div className='pb-16 mt-[1192] md:mt-[1024px]'>
           <About {...aboutConfig} />
         </div>
         <Footer />
