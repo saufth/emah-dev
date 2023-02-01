@@ -36,7 +36,7 @@ const Navbar = () => {
     <>
       <header className={styles.navbar}>
         <div>
-          <Link href='/'>
+          <Link href='/' onClick={handleToggle}>
             <div className={styles.logo}>
               <Image
                 alt='emah logomark'
