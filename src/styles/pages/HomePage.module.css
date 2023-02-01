@@ -32,7 +32,7 @@
     text-center md:text-left;
 }
 
-.heroHighlighted {
+.textHighlighted {
   @apply
     /* Typography */
     text-emah-blue;
@@ -83,5 +83,5 @@
 .about {
   @apply
     /* Spacing */
-    mt-48 md:mt-24;
+    mt-44 md:mt-24;
 }

@@ -1,7 +1,7 @@
 // Types
 import { ShowcaseProps } from './data-display'
 
-/** The Hero component props */
+/** Header component props */
 export interface HeaderProps {
   /** Heading label */
   heading: string
