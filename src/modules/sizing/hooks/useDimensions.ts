@@ -17,12 +17,10 @@ const useDimensions = (
 
   useEffect(() => {
     const handleResize = () => {
-      window.requestAnimationFrame(() => {
-        setDimensions(node
-          ? { width: node.offsetWidth, height: node.offsetHeight }
-          : { width: window.innerWidth, height: window.innerHeight }
-        )
-      })
+      setDimensions(node
+        ? { width: node.offsetWidth, height: node.offsetHeight }
+        : { width: window.innerWidth, height: window.innerHeight }
+      )
     }
     handleResize()
     if (live) {

@@ -14,7 +14,7 @@ import styles from '../styles/pages/HomePage.module.css'
 const aboutConfig: AboutProps = {
   heading: 'Lo Que Hacemos',
   link: '/services',
-  description: 'Impulsamos empresas con visión, a fin de crear un legado de progreso y verdad',
+  description: '"Impulsamos empresas con visión, a fin de crear un legado de progreso y verdad."',
   showcases: [
     {
       heading: 'Marketing',
@@ -54,14 +54,14 @@ const HomePage = () => {
                 <span className={styles.textHighlighted}>Hacemos</span> marketing estratégico
               </h1>
               <p className={styles.heroDescription}>
-                Desarollamos websites, apps y branding en sincronía con el marketing.
+                Great code + Great design + Great apps = Explosive Results.
               </p>
             </header>
             <div className={styles.heroOptions}>
               <CallToAction large />
               <div className={styles.heroLink}>
                 <Link href='/about'>
-                  Conocenos
+                  About Us
                 </Link>
               </div>
             </div>

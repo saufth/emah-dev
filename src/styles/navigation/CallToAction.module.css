@@ -13,7 +13,7 @@
     rounded-3xl
     /* Animation */
     transition-transform
-    duration-100;
+    duration-[110ms];
 }
 
 .content {
@@ -30,7 +30,7 @@
   @apply
     /* Animation */
     transition-transform
-    duration-100;
+    duration-[110ms];
 }
 
 .large {

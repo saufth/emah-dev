@@ -36,6 +36,9 @@ const Navbar = () => {
                 priority
                 className={styles.logomark}
               />
+              <span className={styles.slogan}>
+                Endless Posibilities
+              </span>
             </div>
           </Link>
         </div>

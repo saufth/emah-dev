@@ -23,11 +23,9 @@ const useMousePosition = (
   useEffect(() => {
     if (isPointer() && node) {
       const handleMousePosition = (event: MouseEvent) => {
-        window.requestAnimationFrame(() => {
-          setMousePosition({
-            x: event[`${from}X`],
-            y: event[`${from}Y`]
-          })
+        setMousePosition({
+          x: event[`${from}X`],
+          y: event[`${from}Y`]
         })
       }
       node.addEventListener('mousemove', handleMousePosition)

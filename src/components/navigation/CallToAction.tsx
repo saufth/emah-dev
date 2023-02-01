@@ -14,7 +14,7 @@ import styles from '../../styles/navigation/CallToAction.module.css'
  * @returns The CallToAction component
  */
 const CallToAction = ({ large }: CallToActionProps) => {
-  const fieldRef = useRefMagnetic({ transition: 8 })
+  const fieldRef = useRefMagnetic({ transition: 7 })
   const textRef = useRefMagnetic({ fieldRef, transition: 3 })
   const actionStyle = `${styles.action} ${large ? styles.large : ''}`
 
@@ -23,7 +23,7 @@ const CallToAction = ({ large }: CallToActionProps) => {
       <Link href='/contact'>
         <div className={styles.content}>
           <span className={styles.text} ref={textRef}>
-            Contáctanos
+            Contact
           </span>
         </div>
       </Link>

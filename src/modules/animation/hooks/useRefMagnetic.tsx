@@ -68,17 +68,15 @@ const useRefMagnetic = (
       }
 
       const handleMagnetic = () => {
-        window.requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
           updateTransformStyle(transform)
         })
       }
 
       const handleMouseOut = () => {
-        window.requestAnimationFrame(() => {
-          updateTransformStyle({
-            transition: { x: 0, y: 0 },
-            rotation: { x: 0, y: 0 }
-          })
+        updateTransformStyle({
+          transition: { x: 0, y: 0 },
+          rotation: { x: 0, y: 0 }
         })
       }
 

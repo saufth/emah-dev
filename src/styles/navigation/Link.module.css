@@ -13,7 +13,7 @@
     rounded-6xl
     /* Animation */
     transition-transform
-    duration-75;
+    duration-[110ms];
 }
 .text {
   @apply
@@ -25,5 +25,5 @@
     place-content-center
     /* Animation */
     transition-transform
-    duration-75;
+    duration-[110ms];
 }

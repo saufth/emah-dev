@@ -10,7 +10,7 @@
     gap-y-1.5
     first:[&>span]:self-end
     /* Background */
-    [&>span]:bg-white
+    [&>span]:bg-emah-dark
     /* Border */
     [&>span]:rounded-sm;
 }
