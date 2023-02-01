@@ -4,7 +4,7 @@ import { ShowcaseProps } from './data-display'
 /** Header component props */
 export interface HeaderProps {
   /** Heading label */
-  heading: string
+  heading?: string
   /** Header description */
   description: string
 }

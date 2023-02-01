@@ -12,7 +12,6 @@ import styles from '../styles/pages/HomePage.module.css'
 
 /** About section configuration */
 const aboutConfig: AboutProps = {
-  heading: 'Lo Que Hacemos',
   link: '/services',
   description: '"Impulsamos empresas con visión, a fin de crear un legado de progreso y verdad."',
   showcases: [

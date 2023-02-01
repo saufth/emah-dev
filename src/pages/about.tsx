@@ -84,7 +84,6 @@ const AboutPage = () => {
     <AboutLayout>
       <main>
         <Header
-          heading='Nosotros'
           description='El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos'
         />
         <div className={styles.about}>
