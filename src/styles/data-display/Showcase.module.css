@@ -5,9 +5,9 @@
     h-auto md:h-md lg:h-xl
     [&>div]:w-full [&>div]:md:w-1/2
     [&>div]:h-auto [&>div]:md:h-full
-    /* Spacing */
     /* Flexbox & Grid */
-    flex flex-col-reverse md:flex-row
+    flex
+    flex-col-reverse md:flex-row
     md:gap-x-10 gap-y-6 md:gap-y-0;
 }
 

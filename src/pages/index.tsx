@@ -7,6 +7,8 @@ import Link from '../components/navigation/Link'
 import Image from 'next/image'
 // Types
 import { AboutProps } from '../types/sections'
+// Styles
+import styles from '../styles/pages/Home.module.css'
 
 /** About section configuration */
 const aboutConfig: AboutProps = {
@@ -45,43 +47,36 @@ const HomePage = () => {
   return (
     <HomeLayout>
       <main>
-        <section>
-          <div className='h-auto md:h-3xl max-w-7xl mx-auto flex flex-col-reverse md:flex-row gap-x-5'>
-            <div className='w-full md:w-[55%] h-full flex flex-col justify-center gap-y-12'>
-              <div className='space-y-6 text-center md:text-left'>
-                {/* <span className='font-cairo-medium text-xl mdtext-2xl text-emah-gray/50'>
-                  Endless Posibilities
-                </span> */}
-                <header>
-                  <h1>
-                    <span className='text-emah-blue'>Hacemos</span> marketing estratégico
-                  </h1>
-                </header>
-                <p className='text-xl text-emah-gray'>
-                  Desarollamos websites, apps y branding en sincronía con el marketing.
-                </p>
+        <section className={styles.hero}>
+          <div className={styles.heroContent}>
+            <header className={styles.heroHeader}>
+              <h1>
+                <span className={styles.textHighlighted}>Hacemos</span> marketing estratégico
+              </h1>
+              <p className={styles.heroDescription}>
+                Desarollamos websites, apps y branding en sincronía con el marketing.
+              </p>
+            </header>
+            <div className={styles.heroOptions}>
+              <CallToAction theme='dark' large />
+              <div className={styles.heroLink}>
+                <Link href='/about'>
+                  Conocenos
+                </Link>
               </div>
-              <div className='flex justify-center md:justify-start items-center gap-6'>
-                <CallToAction theme='dark' large />
-                <div className='hidden md:block'>
-                  <Link href='/about'>
-                    Conocenos
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className='my-16 md:my-0 px-16 md:px-0 w-full md:w-[45%] grid place-content-center'>
-              <Image
-                alt='emah marketing solutions'
-                src='/images/sections/hero/home.png'
-                width={640}
-                height={640}
-                className='overflow-hidden rounded-full'
-              />
             </div>
           </div>
+          <div className={styles.heroImageWrap}>
+            <Image
+              alt='emah marketing solutions'
+              src='/images/sections/hero/home.png'
+              width={640}
+              height={640}
+              className={styles.heroImage}
+            />
+          </div>
         </section>
-        <div className='mt-48 md:mt-24'>
+        <div className={styles.about}>
           <About {...aboutConfig} />
         </div>
       </main>

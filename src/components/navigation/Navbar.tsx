@@ -29,9 +29,9 @@ const Navbar = () => {
   const theme: Theme = 'dark'
   // Animation
   const [isOpen, toggle] = useCycle(false, true)
-
+  /** Handle the Menu state */
   const handleToggle = () => toggle()
-
+  /** Close the Menu but not open */
   const closeToggle = () => isOpen && toggle()
 
   return (

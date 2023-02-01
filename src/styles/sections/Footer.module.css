@@ -47,7 +47,8 @@
     pb-12
     mx-auto
     /* Flexbox & Grid */
-    flex flex-col md:flex-row
+    flex
+    flex-col md:flex-row
     justify-center md:justify-between
     items-center
     gap-y-5;
