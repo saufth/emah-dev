@@ -1,7 +1,7 @@
 // Components
 import CallToAction from './CallToAction'
 import Image from 'next/image'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import Menu from './Menu'
 import MenuButton from '../input/MenuButton'
 import Nav from './Nav'
@@ -26,7 +26,7 @@ const Navbar = () => {
     <>
       <header className={styles.navbar}>
         <div>
-          <Link href='/' onClick={closeToggle}>
+          <NextLink href='/' onClick={closeToggle}>
             <div className={styles.logo}>
               <Image
                 alt='emah logomark'
@@ -40,7 +40,7 @@ const Navbar = () => {
                 Endless Posibilities
               </span>
             </div>
-          </Link>
+          </NextLink>
         </div>
 
         <div className={styles.options}>

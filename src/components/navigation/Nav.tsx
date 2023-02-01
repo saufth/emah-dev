@@ -1,6 +1,6 @@
 // Components
 import CallToAction from './CallToAction'
-import Link from 'next/link'
+import NextLink from 'next/link'
 // Types
 import { LinkProps, NavProps } from '../../types/navigation'
 // Styles
@@ -39,9 +39,9 @@ const Nav = ({ primary }: NavProps) => {
     <nav aria-label='Directorio emah' className={styles.nav}>
       {navOptions.map((option, key) => {
         return (
-          <Link href={option.href} key={key}>
+          <NextLink href={option.href} key={key}>
             {option.children}
-          </Link>
+          </NextLink>
         )
       })}
       {primary ? (<CallToAction />) : null}

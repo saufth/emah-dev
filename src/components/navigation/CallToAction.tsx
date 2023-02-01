@@ -1,5 +1,5 @@
 // Components
-import Link from 'next/link'
+import NextLink from 'next/link'
 // Hooks
 import useRefMagnetic from '../../modules/animation/hooks/useRefMagnetic'
 // Types
@@ -20,13 +20,13 @@ const CallToAction = ({ large }: CallToActionProps) => {
 
   return (
     <div className={actionStyle} ref={fieldRef}>
-      <Link href='/contact'>
+      <NextLink href='/contact'>
         <div className={styles.content}>
           <span className={styles.text} ref={textRef}>
             Contact
           </span>
         </div>
-      </Link>
+      </NextLink>
     </div>
   )
 }

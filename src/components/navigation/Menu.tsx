@@ -1,6 +1,6 @@
 // Components
 import CallToAction from './CallToAction'
-import Link from 'next/link'
+import NextLink from 'next/link'
 // Hooks
 import useDimensions from '../../modules/sizing/hooks/useDimensions'
 // Animation
@@ -71,24 +71,24 @@ const Menu = ({ isOpen, action }: MenuProps) => {
           Menu
         </div>
         <div className={styles.option} onClick={action}>
-          <Link href='/'>
+          <NextLink href='/'>
             Home
-          </Link>
+          </NextLink>
         </div>
         <div className={styles.option} onClick={action}>
-          <Link href='/about'>
+          <NextLink href='/about'>
             About us
-          </Link>
+          </NextLink>
         </div>
         <div className={styles.option} onClick={action}>
-          <Link href='/services'>
+          <NextLink href='/services'>
             Services
-          </Link>
+          </NextLink>
         </div>
         <div className={styles.option} onClick={action}>
-          <Link href='/contact' className={styles.contact}>
+          <NextLink href='/contact' className={styles.contact}>
             Contact
-          </Link>
+          </NextLink>
           <div className={styles.action} onClick={action}>
             <CallToAction large />
           </div>
