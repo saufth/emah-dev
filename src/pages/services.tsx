@@ -57,7 +57,7 @@ const ServicesPage = () => {
     <SmoothLayout>
       <main>
         <Header
-          description='Creemos que los mejores resultados son logrados cuando la ejecución del branding y el marketing empujan a la misma dirección'
+          description='Los mejores resultados se logran cuando la ejecución del branding y el marketing empujan hacia el mismo destino.'
         />
         <About {...aboutConfig} />
       </main>

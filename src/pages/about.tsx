@@ -10,7 +10,7 @@ import styles from '../styles/pages/AboutPage.module.css'
 
 /** About page configuration */
 const aboutConfig: AboutProps = {
-  description: 'Aquí te presentamos los más importantes para nosotros, mismos que forman parte de nuestro ADN y que son clave en la generación de soluciones de valor para nuestros clientes',
+  description: 'Te presentamos las soluciones más importantes para nosotros. Estas forman parte de nuestro ADN y son clave en la generación de valor para nuestros clientes.',
   showcases: [
     {
       heading: 'Trabajamos en equipo',
@@ -84,7 +84,7 @@ const AboutPage = () => {
     <AboutLayout>
       <main>
         <Header
-          description='El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos'
+          description='El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos hacia el mismo objetivo.'
         />
         <div className={styles.about}>
           <About {...aboutConfig} />
