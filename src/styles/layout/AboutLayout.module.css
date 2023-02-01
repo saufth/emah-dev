@@ -17,7 +17,7 @@
   @apply
     /* Sizing */
     max-w-3xl
-    h-xl sm:h-md
+    h-lg sm:h-md
     /* Spacing */
     mx-4 md:mx-auto
     /* Layout */
