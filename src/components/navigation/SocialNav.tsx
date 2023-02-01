@@ -8,7 +8,7 @@ import NextLink from 'next/link'
  */
 const SocialNav = () => {
   return (
-    <div className='flex gap-x-5 md:gap-x-3'>
+    <div className='flex gap-x-5 md:gap-x-3 justify-center'>
       <NextLink
         href='https://www.facebook.com/emahmx?mibextid=LQQJ4d'
         target='_blank'

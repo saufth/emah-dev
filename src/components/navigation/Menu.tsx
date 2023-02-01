@@ -9,6 +9,7 @@ import { motion } from 'framer-motion'
 import { MenuProps } from '../../types/navigation'
 // Styles
 import styles from '../../styles/navigation/Menu.module.css'
+import SocialNav from './SocialNav'
 
 /** Background animation variants */
 const backgroundVariants = {
@@ -62,7 +63,7 @@ const Menu = ({ isOpen, action }: MenuProps) => {
       animate={isOpen ? 'open' : 'closed'}
       custom={width}
     >
-      <motion.nav
+      <motion.div
         aria-label='Directorio emah'
         className={styles.nav}
         variants={navVariants}
@@ -86,14 +87,12 @@ const Menu = ({ isOpen, action }: MenuProps) => {
           </NextLink>
         </div>
         <div className={styles.option} onClick={action}>
-          <NextLink href='/contact' className={styles.contact}>
-            Contact
-          </NextLink>
-          <div className={styles.action} onClick={action}>
-            <CallToAction large />
-          </div>
+          <SocialNav />
         </div>
-      </motion.nav>
+        <div className={styles.option} onClick={action}>
+          <CallToAction large />
+        </div>
+      </motion.div>
 
       <motion.div
         className={styles.background}
