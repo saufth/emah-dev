@@ -72,22 +72,22 @@ const Menu = ({ isOpen, action }: MenuProps) => {
         </div>
         <div className={styles.option} onClick={action}>
           <Link href='/'>
-            Inicio
+            Home
           </Link>
         </div>
         <div className={styles.option} onClick={action}>
           <Link href='/about'>
-            Nosotros
+            About us
           </Link>
         </div>
         <div className={styles.option} onClick={action}>
           <Link href='/services'>
-            Servicios
+            Services
           </Link>
         </div>
         <div className={styles.option} onClick={action}>
           <Link href='/contact' className={styles.contact}>
-            Contacto
+            Contact
           </Link>
           <div className={styles.action} onClick={action}>
             <CallToAction large />

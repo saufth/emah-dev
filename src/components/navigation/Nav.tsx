@@ -9,19 +9,19 @@ import styles from '../../styles/navigation/Nav.module.css'
 /** The navigation configuration */
 const navConfig: LinkProps[] = [
   {
-    children: 'Inicio',
+    children: 'Home',
     href: '/'
   },
   {
-    children: 'Nosotros',
+    children: 'About us',
     href: '/about'
   },
   {
-    children: 'Servicios',
+    children: 'Services',
     href: '/services'
   },
   {
-    children: 'Contacto',
+    children: 'Contact',
     href: '/contact'
   }
 ]
