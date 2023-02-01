@@ -60,7 +60,7 @@ const HomePage = () => {
               <CallToAction large />
               <div className={styles.heroLink}>
                 <Link href='/about'>
-                  About Us
+                  About us
                 </Link>
               </div>
             </div>
