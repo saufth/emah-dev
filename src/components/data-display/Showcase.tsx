@@ -17,17 +17,12 @@ const Showcase = (
     heading,
     descriptions,
     image,
-    theme = 'light',
     action,
     link,
     large,
     reverse
   }: ShowcaseProps
 ) => {
-  // Theme
-  const themeStatus = theme !== 'light'
-  const headingStyle = themeStatus ? styles.headingDark : ''
-  const descriptionsStyle = `${styles.descriptions} ${themeStatus ? styles.descriptionsDark : ''}`
   // Reverse
   const containerStyle = `${styles.container} ${reverse ? styles.containerReverse : ''}`
   const demoStyle = `${styles.demo} ${reverse ? styles.demoReverse : ''} ${large ? styles.demoLarge : ''}`
@@ -42,10 +37,10 @@ const Showcase = (
       <div>
         <div className={demoStyle}>
           <div className={styles.header}>
-            <h2 className={headingStyle}>
+            <h2>
               {heading}
             </h2>
-            <div className={descriptionsStyle}>
+            <div className={styles.descriptions}>
               {descriptions.map((description, key) => (
                 <p key={key}>
                   {description}
@@ -54,7 +49,7 @@ const Showcase = (
             </div>
           </div>
           {action
-            ? <CallToAction theme='dark' large />
+            ? <CallToAction large />
             : link ? <Link href={link}>Saber más</Link> : null}
         </div>
       </div>

@@ -1,8 +1,9 @@
 // Components
 import Contact from '../components/sections/Contact'
 import Footer from '../components/sections/Footer'
-import Hero from '../components/sections/Hero'
 import SmoothLayout from '../components/layout/SmoothLayout'
+// Styles
+import styles from '../styles/pages/ContactPage.module.css'
 
 /**
 * Contact page
@@ -11,17 +12,15 @@ import SmoothLayout from '../components/layout/SmoothLayout'
 const ContactPage = () => {
   return (
     <SmoothLayout>
-      <main className='mt-48'>
-        <Hero space>
-          <span className='text-left tracking-normal'>
-            <div className='text-base md:text-lg mb-2'>
-              ¿Tienes algun proyecto en mente?
-            </div>
-            <div>
-              Pongamonos en contacto
-            </div>
-          </span>
-        </Hero>
+      <main>
+        <div className={styles.header}>
+          <h1 className={styles.heading}>
+            ¿Tienes algun proyecto en mente?
+          </h1>
+          <p className={styles.description}>
+            Pongamonos en contacto
+          </p>
+        </div>
         <Contact />
       </main>
       <Footer />

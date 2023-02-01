@@ -1,8 +1,5 @@
-// Types
-import { ThemeProps } from './theme'
-
 /** Showcase component props */
-export interface ShowcaseProps extends ThemeProps {
+export interface ShowcaseProps {
   /** Heading of the showcase */
   heading: string
   /** Description of the showcase */

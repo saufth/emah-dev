@@ -7,22 +7,16 @@ import { CallToActionProps } from '../../types/navigation'
 // Styles
 import styles from '../../styles/navigation/CallToAction.module.css'
 
-/** Theme configuration for CallToAction */
-const themeConfig = {
-  light: styles.actionLight,
-  dark: styles.actionDark
-}
-
 /**
  * The primary call to actions of the application
  * @see {@link CallToActionProps} for props definition
  * @param {CallToActionProps} CallToActionProps The component props
  * @returns The CallToAction component
  */
-const CallToAction = ({ large, theme = 'light' }: CallToActionProps) => {
-  const fieldRef = useRefMagnetic({ transition: 6 })
-  const textRef = useRefMagnetic({ fieldRef, transition: 4 })
-  const actionStyle = `${styles.action} ${large ? styles.large : ''} ${themeConfig[theme]}`
+const CallToAction = ({ large }: CallToActionProps) => {
+  const fieldRef = useRefMagnetic({ transition: 8 })
+  const textRef = useRefMagnetic({ fieldRef, transition: 3 })
+  const actionStyle = `${styles.action} ${large ? styles.large : ''}`
 
   return (
     <div className={actionStyle} ref={fieldRef}>

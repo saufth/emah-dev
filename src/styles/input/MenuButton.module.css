@@ -14,9 +14,3 @@
     /* Border */
     [&>span]:rounded-sm;
 }
-
-.buttonDark {
-  @apply
-    /* Background */
-    [&>span]:bg-emah-dark;
-}

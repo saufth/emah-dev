@@ -2,24 +2,16 @@
 import CallToAction from '../navigation/CallToAction'
 import Link from 'next/link'
 import Nav from '../navigation/Nav'
-// Next router
-import withRouter, { WithRouterProps } from 'next/dist/client/with-router'
-// Types
-import { Theme } from '../../types/theme'
 // Styles
 import styles from '../../styles/sections/Footer.module.css'
 
 /**
  * The footer section of application
- * @see {@link WithRouterProps} for props definition
- * @param {WithRouterProps} WithRouterProps The Footer component porps
  * @returns Footer section component
  */
-const Footer = ({ router }: WithRouterProps) => {
-  const theme: Theme = router.pathname === '/' ? 'light' : 'dark'
-  const footerStyle = `${styles.section} ${theme !== 'light' ? styles.footerDark : ''}`
+const Footer = () => {
   return (
-    <footer className={footerStyle}>
+    <footer className={styles.section}>
       <div id='about' className={styles.philosophy}>
         <div className={styles.philosophyHeader}>
           <div className={styles.philosophyHeading}>
@@ -36,13 +28,13 @@ const Footer = ({ router }: WithRouterProps) => {
             info@emah.mx
           </Link>
         </div>
-        <Nav theme={theme} />
+        <Nav />
         <div className={styles.footAction}>
-          <CallToAction large theme='dark' />
+          <CallToAction large />
         </div>
       </div>
     </footer>
   )
 }
 
-export default withRouter(Footer)
+export default Footer

@@ -1,9 +1,8 @@
 // Types
 import { Actionable } from './input'
-import { ThemeProps } from './theme'
 
 /** The CallToAction component props */
-export interface CallToActionProps extends ThemeProps {
+export interface CallToActionProps {
   /** Set button width to 100% and height large */
   large?: boolean
 }
@@ -17,7 +16,7 @@ export interface LinkProps {
 }
 
 /** Nav component props */
-export interface NavProps extends ThemeProps {
+export interface NavProps {
   /**
    * Set the CallToAction component instead of the contact link,
    * is commonly used for the navbar

@@ -5,6 +5,7 @@
     h-auto md:h-3xl
     /* Spacing */
     mx-auto
+    mb-16
     /* Flexbox & Grid */
     flex
     flex-col-reverse md:flex-row

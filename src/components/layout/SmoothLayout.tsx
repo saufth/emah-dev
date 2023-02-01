@@ -8,7 +8,7 @@ import { useScroll, useTransform, useSpring, motion } from 'framer-motion'
 // Types
 import { ParentProps } from '../../types/layout'
 // Styles
-import styles from '../../styles/layout/AboutLayout.module.css'
+import styles from '../../styles/layout/SmoothLayout.module.css'
 
 /**
  * A scrolleable container with ease effect

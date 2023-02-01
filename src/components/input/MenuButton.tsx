@@ -1,19 +1,17 @@
 // Types
-import { InputProps } from '../../types/input'
+import { Actionable } from '../../types/input'
 // Styles
 import styles from '../../styles/input/MenuButton.module.css'
 
 /**
 * The main menu button of the application
-* @see {@link InputProps} for props definition
-* @param {InputProps} InputProps The basic input component props
+* @see {@link Actionable} for props definition
+* @param {Actionable} Actionable The basic input component props
 * @returns The MenuButton component
 */
-const MenuButton = ({ action, theme = 'light' }: InputProps) => {
-  const menuStyle = `${styles.button} ${theme !== 'light' ? '' : styles.buttonDark}`
-
+const MenuButton = ({ action }: Actionable) => {
   return (
-    <button className={menuStyle} onClick={action}>
+    <button className={styles.button} onClick={action}>
       <span />
       <span />
     </button>

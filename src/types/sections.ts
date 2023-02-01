@@ -1,17 +1,12 @@
 // Types
-import { ParentProps } from './layout'
 import { ShowcaseProps } from './data-display'
 
 /** The Hero component props */
-export interface HeroProps extends ParentProps {
+export interface HeaderProps {
   /** Heading label */
-  label?: string
-  /** Heading text sizes */
-  text?: 'md' | 'lg'
-  /** Define the space in X axis */
-  space?: boolean
-  /** Define the container height */
-  height?: boolean
+  heading: string
+  /** Header description */
+  description: string
 }
 
 /** About component props */

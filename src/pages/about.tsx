@@ -2,7 +2,7 @@
 import About from '../components/sections/About'
 import AboutLayout from '../components/layout/AboutLayout'
 import Footer from '../components/sections/Footer'
-import Hero from '../components/sections/Hero'
+import Header from '../components/sections/Header'
 // Types
 import { AboutProps } from '../types/sections'
 
@@ -80,10 +80,11 @@ const aboutConfig: AboutProps = {
 const AboutPage = () => {
   return (
     <AboutLayout>
-      <main className='pt-36 md:pt-44'>
-        <Hero label='Nosotros' text='md'>
-          El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos
-        </Hero>
+      <main>
+        <Header
+          heading='Nosotros'
+          description='El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos'
+        />
         <div className='pb-16 mt-[1196px] md:mt-[1024px]'>
           <About {...aboutConfig} />
         </div>

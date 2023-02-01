@@ -90,7 +90,7 @@ const Menu = ({ isOpen, action }: MenuProps) => {
             Contacto
           </Link>
           <div className={styles.action} onClick={action}>
-            <CallToAction large theme='dark' />
+            <CallToAction large />
           </div>
         </div>
       </motion.nav>

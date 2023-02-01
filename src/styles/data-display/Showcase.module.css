@@ -50,25 +50,14 @@
     space-y-3 md:space-y-6;
 }
 
-.headingDark {
-  @apply
-   /* Typography */
-   text-emah-dark;
-}
-
 .descriptions {
   @apply
     /* Spacing */
     space-y-2 sm:space-y-3
     /* Typography */
     font-proxima-soft-medium md:font-proxima-soft-semibold
-    text-base lg:text-lg;
-}
-
-.descriptionsDark {
-  @apply
-   /* Typography */
-   text-emah-gray;
+    text-base lg:text-lg
+    text-emah-gray;
 }
 
 .imageContainer {

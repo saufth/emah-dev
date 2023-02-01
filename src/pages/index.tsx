@@ -1,14 +1,14 @@
 // Components
 import About from '../components/sections/About'
 import Footer from '../components/sections/Footer'
-import HomeLayout from '../components/layout/HomeLayout'
+import SmoothLayout from '../components/layout/SmoothLayout'
 import CallToAction from '../components/navigation/CallToAction'
 import Link from '../components/navigation/Link'
 import Image from 'next/image'
 // Types
 import { AboutProps } from '../types/sections'
 // Styles
-import styles from '../styles/pages/Home.module.css'
+import styles from '../styles/pages/HomePage.module.css'
 
 /** About section configuration */
 const aboutConfig: AboutProps = {
@@ -45,7 +45,7 @@ const aboutConfig: AboutProps = {
  */
 const HomePage = () => {
   return (
-    <HomeLayout>
+    <SmoothLayout>
       <main>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
@@ -58,7 +58,7 @@ const HomePage = () => {
               </p>
             </header>
             <div className={styles.heroOptions}>
-              <CallToAction theme='dark' large />
+              <CallToAction large />
               <div className={styles.heroLink}>
                 <Link href='/about'>
                   Conocenos
@@ -76,12 +76,10 @@ const HomePage = () => {
             />
           </div>
         </section>
-        <div className={styles.about}>
-          <About {...aboutConfig} />
-        </div>
+        <About {...aboutConfig} />
       </main>
       <Footer />
-    </HomeLayout>
+    </SmoothLayout>
   )
 }
 

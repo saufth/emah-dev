@@ -1,8 +1,8 @@
 // Components
 import About from '../components/sections/About'
-import SmoothLayout from '../components/layout/SmoothLayout'
 import Footer from '../components/sections/Footer'
-import Hero from '../components/sections/Hero'
+import Header from '../components/sections/Header'
+import SmoothLayout from '../components/layout/SmoothLayout'
 // Types
 import { AboutProps } from '../types/sections'
 
@@ -55,16 +55,14 @@ const aboutConfig: AboutProps = {
 const ServicesPage = () => {
   return (
     <SmoothLayout>
-      <main className='pt-44'>
-        <Hero label='Servicios' text='md'>
-          Creemos que los mejores resultados son logrados cuando la ejecución
-          del branding y el marketing empujan a la misma dirección
-        </Hero>
-        <div className='pb-16'>
-          <About {...aboutConfig} />
-        </div>
-        <Footer />
+      <main>
+        <Header
+          heading='Servicios'
+          description='Creemos que los mejores resultados son logrados cuando la ejecución del branding y el marketing empujan a la misma dirección'
+        />
+        <About {...aboutConfig} />
       </main>
+      <Footer />
     </SmoothLayout>
   )
 }

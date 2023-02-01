@@ -1,7 +1,7 @@
 .section {
   @apply
     /* Sizing */
-    max-w-2xl
+    max-w-3xl
     /* Spacing */
     mx-auto
     mt-16

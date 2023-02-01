@@ -6,11 +6,14 @@
     /* Typography */
     font-proxima-soft-semibold
     text-sm
+    text-white
+    /* Background */
+    bg-emah-blue
     /* Border */
     rounded-3xl
     /* Animation */
     transition-transform
-    duration-75;
+    duration-100;
 }
 
 .content {
@@ -27,7 +30,7 @@
   @apply
     /* Animation */
     transition-transform
-    duration-75;
+    duration-100;
 }
 
 .large {
@@ -37,20 +40,4 @@
     h-12
     /* Typography */
     text-base;
-}
-
-.actionLight {
-  @apply
-    /* Typography */
-    text-emah-gray
-    /* Background */
-    bg-white;
-}
-
-.actionDark {
-  @apply
-    /* Typography */
-    text-white
-    /* Background */
-    bg-emah-blue;
 }

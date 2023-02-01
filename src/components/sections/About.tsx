@@ -36,7 +36,6 @@ const About = ({ heading, description, showcases, action, link }: AboutProps) =>
             heading={about.heading}
             descriptions={about.descriptions}
             image={about.image}
-            theme='dark'
             large
             action={action}
             link={link}

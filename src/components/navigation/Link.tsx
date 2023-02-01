@@ -12,8 +12,8 @@ import styles from '../../styles/navigation/Link.module.css'
  * @returns Link component
  */
 const Link = ({ children, href }: LinkProps) => {
-  const fieldRef = useRefMagnetic({ transition: 6 })
-  const textRef = useRefMagnetic({ fieldRef, transition: 4 })
+  const fieldRef = useRefMagnetic({ transition: 8 })
+  const textRef = useRefMagnetic({ fieldRef, transition: 3 })
 
   return (
     <div className={styles.link} ref={fieldRef}>

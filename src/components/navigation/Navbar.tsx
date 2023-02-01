@@ -7,26 +7,14 @@ import MenuButton from '../input/MenuButton'
 import Nav from './Nav'
 // Animation
 import { useCycle } from 'framer-motion'
-// Types
-import { Theme } from '../../types/theme'
 // Styles
 import styles from '../../styles/navigation/Navbar.module.css'
 
-/** Theme configuration for Navbar */
-const themeConfig = {
-  light: {
-    logo: '/images/logotype/logomark-white.svg'
-  },
-  dark: {
-    logo: '/images/logotype/logomark.svg'
-  }
-}
 /**
  * The main navbar of application
  * @returns Navbar component
  */
 const Navbar = () => {
-  const theme: Theme = 'dark'
   // Animation
   const [isOpen, toggle] = useCycle(false, true)
   /** Handle the Menu state */
@@ -42,7 +30,7 @@ const Navbar = () => {
             <div className={styles.logo}>
               <Image
                 alt='emah logomark'
-                src={themeConfig[theme].logo}
+                src='/images/logotype/logomark.svg'
                 width={64}
                 height={48}
                 priority
@@ -55,8 +43,8 @@ const Navbar = () => {
         <div className={styles.options}>
           <div className={styles.nav}>
             {isOpen
-              ? <CallToAction theme={theme} />
-              : <Nav primary theme={theme} />}
+              ? <CallToAction />
+              : <Nav primary />}
           </div>
           {isOpen
             ? <div className={styles.close} onClick={handleToggle}>X</div>
