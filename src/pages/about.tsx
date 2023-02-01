@@ -84,7 +84,7 @@ const AboutPage = () => {
         <Hero label='Nosotros' text='md'>
           El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos
         </Hero>
-        <div className='pb-16 mt-[1128px] md:mt-[1024px]'>
+        <div className='pb-16 mt-[1196px] md:mt-[1024px]'>
           <About {...aboutConfig} />
         </div>
         <Footer />
