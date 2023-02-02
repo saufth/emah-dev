@@ -22,8 +22,8 @@
 .option {
   @apply
     /* Typography */
-    text-5xl md:text-4xl lg:text-5xl
     font-proxima-soft-bold
+    text-5xl md:text-4xl lg:text-5xl
     text-emah-dark;
 }
 
