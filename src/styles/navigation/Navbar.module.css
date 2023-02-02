@@ -1,11 +1,11 @@
 .navbar {
   @apply
     /* Sizing */
-    h-[54px] md:h-[57px]
     max-w-[1920px]
+    h-[54px] md:h-[57px]
     /* Spacing */
-    mx-auto
     px-5%
+    mx-auto
     /* Layout */
     fixed
     top-0

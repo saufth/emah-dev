@@ -6,6 +6,7 @@
     /* Layout */
     fixed
     top-0
+    left-0
     z-60
     overflow-hidden
     /* Flexbox & Grid */
@@ -21,8 +22,8 @@
 .option {
   @apply
     /* Typography */
-    font-proxima-soft-bold
     text-5xl md:text-4xl lg:text-5xl
+    font-proxima-soft-bold
     text-emah-dark;
 }
 
