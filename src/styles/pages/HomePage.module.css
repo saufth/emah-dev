@@ -4,6 +4,7 @@
     max-w-7xl
     h-auto md:h-3xl
     /* Spacing */
+    mb-36 md:mb-24
     mx-auto
     /* Flexbox & Grid */
     flex
