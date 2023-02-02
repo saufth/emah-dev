@@ -1,10 +1,10 @@
 .section {
   @apply
     /* Sizing */
-    max-w-7xl
     /* Spacing */
+    max-w-7xl
+    mx-auto
     mt-36 md:mt-48
-    mx-auto;
 }
 
 .foot {

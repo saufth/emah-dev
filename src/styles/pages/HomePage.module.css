@@ -1,11 +1,11 @@
 .hero {
   @apply
     /* Sizing */
-    max-w-7xl
     h-auto md:h-3xl
+    max-w-7xl
     /* Spacing */
     mx-auto
-    mb-36 md:mt-24
+    my-0
     /* Flexbox & Grid */
     flex
     flex-col-reverse md:flex-row
